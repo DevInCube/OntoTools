@@ -5,14 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0c1d4ee9-4b11-4a44-9bd9-c8cdd14a7440</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>My.OntoTools.py</StartupFile>
+    <StartupFile>ietest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>My.OntoTools</Name>
     <RootNamespace>My.OntoTools</RootNamespace>
-    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -24,10 +24,30 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="code_chinker.py" />
+    <Compile Include="ietest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="infoex.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="My.OntoTools.py" />
+    <Compile Include="qtest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RDF\rdflibex1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="senseg.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RDF\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

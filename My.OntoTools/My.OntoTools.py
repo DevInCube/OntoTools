@@ -78,3 +78,11 @@ list(map(lambda w: len(filter(lambda c: c.lower() in "aeiou", w)), sent))
 
 #POS tagger
 nltk.pos_tag(text)
+
+#classify test
+featuresets = [(gender_features(n), g) for (n,g) in names]
+train_set, test_set = featuresets[500:], featuresets[:500]
+classifier = nltk.NaiveBayesClassifier.train(train_set)
+classifier.classify(gender_features('Neo'))
+#print nltk.classify.accuracy(classifier, test_set)
+classifier.show_most_informative_features(5)
