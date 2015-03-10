@@ -12,7 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>My.OntoTools</Name>
     <RootNamespace>My.OntoTools</RootNamespace>
-    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -32,6 +32,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="My.OntoTools.py" />
+    <Compile Include="NLP\html_preproc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NLP\wiki_ppf.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="qtest.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +53,7 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NLP\" />
     <Folder Include="RDF\" />
   </ItemGroup>
   <PropertyGroup>
