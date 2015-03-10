@@ -38,6 +38,9 @@
     <Compile Include="RDF\rdflibex1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RDF\rdf_read.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="senseg.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,7 +50,11 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
     <Folder Include="RDF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\tab.rdf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
