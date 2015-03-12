@@ -32,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="My.OntoTools.py" />
+    <Compile Include="NLP\corrector.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NLP\html_preproc.py">
       <SubType>Code</SubType>
     </Compile>
