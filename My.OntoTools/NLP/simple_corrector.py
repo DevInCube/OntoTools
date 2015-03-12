@@ -1,4 +1,5 @@
 import re, collections
+from urllib.request import urlopen
 
 def words(text): return re.findall('[a-z]+', text.lower()) 
 
@@ -8,7 +9,8 @@ def train(features):
         model[f] += 1
     return model
 
-NWORDS = train(words(file('big.txt').read()))
+source = urlopen('http://norvig.com/big.txt').read().decode('utf8')
+NWORDS = train(words(source))
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 

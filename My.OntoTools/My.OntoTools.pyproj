@@ -32,7 +32,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="My.OntoTools.py" />
-    <Compile Include="NLP\corrector.py">
+    <Compile Include="NLP\simple_corrector.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NLP\html_preproc.py">
@@ -56,6 +56,7 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
     <Folder Include="NLP\" />
     <Folder Include="RDF\" />
   </ItemGroup>
