@@ -12,7 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>My.OntoTools</Name>
     <RootNamespace>My.OntoTools</RootNamespace>
-    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -62,6 +62,9 @@
     <Compile Include="RDF\rdflibex1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RDF\rdf_read.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="senseg.py">
       <SubType>Code</SubType>
     </Compile>
@@ -84,7 +87,11 @@
     <Folder Include="Webdata\" />
     <Folder Include="Resources\" />
     <Folder Include="NLP\" />
+    <Folder Include="Resources\" />
     <Folder Include="RDF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\tab.rdf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
