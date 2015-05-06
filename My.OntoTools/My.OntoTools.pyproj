@@ -25,6 +25,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="code_chinker.py" />
+    <Compile Include="Discovery\FindResult.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Discovery\GoogleFinder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Discovery\IFinder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Discovery\WikipediaFinder.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ietest.py">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +48,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NLP\html_preproc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NLP\syntree_test.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NLP\wiki_ppf.py">
@@ -50,12 +65,23 @@
     <Compile Include="senseg.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Webdata\IScopePrioritySetter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Webdata\WebDoc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Webdata\WebDocMeta.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Discovery\" />
+    <Folder Include="Webdata\" />
     <Folder Include="Resources\" />
     <Folder Include="NLP\" />
     <Folder Include="RDF\" />
