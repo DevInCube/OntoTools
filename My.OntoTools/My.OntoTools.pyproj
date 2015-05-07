@@ -53,10 +53,16 @@
     <Compile Include="NLP\html_preproc.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NLP\Lexers\WordLexer.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NLP\syntree_test.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NLP\wiki_ppf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Onto\Ontology.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="qtest.py">
@@ -87,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Discovery\" />
+    <Folder Include="NLP\Lexers\" />
+    <Folder Include="Onto\" />
     <Folder Include="NLP\Corrections\" />
     <Folder Include="Webdata\" />
     <Folder Include="Resources\" />
@@ -95,6 +103,7 @@
     <Folder Include="RDF\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\solar.html" />
     <Content Include="Resources\tab.rdf" />
   </ItemGroup>
   <PropertyGroup>
